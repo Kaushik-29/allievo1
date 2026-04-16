@@ -28,8 +28,8 @@ validateEnv();
 module.exports = {
   PORT: parseInt(process.env.PORT || '3001', 10),
   NODE_ENV: process.env.NODE_ENV || 'development',
-  FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:5173',
-  DATABASE_URL: process.env.DATABASE_URL || 'postgresql://localhost:5432/allievo',
+  FRONTEND_URL: process.env.FRONTEND_URL || 'https://allievo.netlify.app',
+  DATABASE_URL: process.env.DATABASE_URL || 'postgresql://allievo_user:Xm9YruvU87RlrvfdA60mWKqw7DvS5wI1@dpg-d7gdlk647okc73fjkorg-a/allievo',
   REDIS_URL: process.env.REDIS_URL || 'redis://localhost:6379',
   JWT_SECRET: process.env.JWT_SECRET || 'allievo-dev-secret-2026',
   JWT_EXPIRY: process.env.JWT_EXPIRY || '7d',
