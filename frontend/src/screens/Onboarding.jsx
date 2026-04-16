@@ -124,13 +124,6 @@ export default function Onboarding() {
             Parametric insurance for Swiggy & Zomato delivery partners. When disruptions hit your zone, get paid instantly — no claims needed. Coverage from just ₹49/week.
           </p>
 
-          {/* Demo Login Quick Access */}
-          <div style={{ marginTop: 16, display: 'flex', justifyContent: 'center', gap: 8 }}>
-            <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 12, padding: '8px 16px', fontSize: 12, color: 'rgba(255,255,255,0.6)' }}>
-              Demo Login: <strong style={{ color: '#fff' }}>9876543210</strong> / <strong style={{ color: '#fff' }}>demo123</strong>
-            </div>
-          </div>
-        </div>
 
         {/* Form */}
         <div className="onboarding-form-area">
