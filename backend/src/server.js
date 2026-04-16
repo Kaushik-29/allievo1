@@ -79,15 +79,9 @@ app.use('/api/payments', apiLimiter, paymentsRoutes);
 app.use('/api/ai', aiLimiter, aiRoutes);
 app.use('/api/admin', apiLimiter, adminRoutes);
 
-// ── Serve Frontend (production) ─────────────────────────────
-const publicPath = path.join(__dirname, '../public');
-app.use(express.static(publicPath));
-
-// SPA fallback — serve index.html for non-API routes
-app.get('{*path}', (req, res) => {
-  if (!req.path.startsWith('/api')) {
-    res.sendFile(path.join(publicPath, 'index.html'));
-  }
+// ── Root Endpoint for Health Checks ───────────────────────────
+app.get('/', (req, res) => {
+  res.json({ message: 'Allievo API is running smoothly.' });
 });
 
 // ── Error Handler ───────────────────────────────────────────
