@@ -123,6 +123,7 @@ export default function Onboarding() {
           <p className="hero-sub">
             Parametric insurance for Swiggy & Zomato delivery partners. When disruptions hit your zone, get paid instantly — no claims needed. Coverage from just ₹49/week.
           </p>
+          </div>
 
 
         {/* Form */}
